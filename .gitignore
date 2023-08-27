@@ -1,0 +1,7 @@
+demos/*
+scripts/colors.sh
+
+*.vsix
+
+.vscode/.ropeproject/*
+.vscode/settings.json

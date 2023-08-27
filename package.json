@@ -1,0 +1,36 @@
+{
+    "name": "stained-glass-theme",
+    "displayName": "Stained Glass Theme",
+    "description": "Colorful and balanced theme.",
+    "version": "1.0.0",
+    "author": "Nate Crow (https://github.com/natecrow)",
+    "publisher": "natecrow",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/natecrow/stained-glass-vscode-theme.git"
+    },
+    "homepage": "https://github.com/natecrow/stained-glass-vscode-theme",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "galleryBanner": {
+        "color": "#1b1b1b",
+        "theme": "dark"
+    },
+    "keywords": [
+        "VSCode", "Themes", "Balanced", "Stained Glass"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Stained Glass Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/stained-glass-dark-color-theme.json"
+            }
+        ]
+    }
+}
