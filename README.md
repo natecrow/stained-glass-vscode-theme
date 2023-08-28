@@ -5,32 +5,76 @@ I designed this theme using LCH color values to get more perceptually uniform hu
 - CIE standard observer = 2
 - CIE standard illuminant = D50
 
-## Editor
-
-<!-- TODO: complete this section -->
+## Palette
 
 - Italics are used for comments, library/support entities, storage types, attributes, and markup italic.
 - Bold is used for method/function declarations and markup bold.
 
-## Terminal
+### Neutral foreground
 
-color               | LCH value     | RGB hex value
----                 | ---           | ---
-background          | 5, 0, 0       | #111111
-foreground          | 75, 5, 60     | #c0b7b1
-0 (black)           | 20, 0, 0      | #303030
-1 (red)             | 60, 60, 30    | #e9655f
-2 (green)           | 60, 50, 150   | #26a55d
-3 (yellow)          | 60, 55, 90    | #a48f25
-4 (blue)            | 60, 50, 270   | #5793e9
-5 (magenta)         | 60, 60, 330   | #d469c7
-6 (cyan)            | 60, 35, 210   | #20a0ae
-7 (white)           | 80, 0, 0      | #c6c6c6
-8 (brightBlack)     | 60, 0, 0      | #919191
-9 (brightRed)       | 75, 40, 0     | #fc9bbb
-10 (brightGreen)    | 80, 50, 120   | #acd372
-11 (brightYellow)   | 80, 40, 60    | #f9b887
-12 (brightBlue)     | 80, 35, 240   | #7ed2fe
-13 (brightMagenta)  | 80, 34, 300   | #d2bdfe
-14 (brightCyan)     | 80, 50, 180   | #24dfc4
-15 (brightWhite)    | 100, 0, 0     | #ffffff
+color               | LCH value     | RGB hex value | notes
+---                 | ---           | ---           | ---
+fg45                | 45, 5, 60     | #716963       | whitespace foreground
+fg60                | 60, 5, 60     | #988f89       | 
+fg75                | 75, 5, 60     | #c0b7b1       | main foreground, entities, cursor, markup italic
+fg90                | 90, 5, 60     | #eae1da       | method/function declarations, markup bold
+
+### Background
+
+color               | LCH value     | RGB hex value | notes
+---                 | ---           | ---           | ---
+black               | 0, 0, 0       | #000000       | 
+bg5                 | 5, 0, 0       | #111111       | main background
+bg10                | 10, 0, 0      | #1b1b1b       | line highlight
+bg15                | 15, 0, 0      | #262626       | 
+bg20                | 20, 0, 0      | #303030       | selection
+bg25                | 25, 0, 0      | #3b3b3b       | hover highlight
+bg35                | 35, 0, 0      | #525252       | 
+
+### Main non-neutral foreground
+
+color           | LCH value     | RGB hex value | notes
+---             | ---           | ---           | ---
+red             | 60, 60, 30    | #e9655f       | terminal red, errors, invalid, diff delete
+green           | 60, 50, 150   | #26a55d       | terminal green, strings, CSS tags, markup code, diff insert
+yellow          | 60, 55, 90    | #a48f25       | terminal yellow, variables, HTML tags, markup heading
+blue            | 60, 50, 270   | #5793e9       | terminal blue, storage types, attributes, markup underline, diff change
+magenta         | 60, 60, 330   | #d469c7       | terminal magenta, keywords, storage, tags
+cyan            | 60, 35, 210   | #20a0ae       | terminal cyan, comments, markup quote
+lightPink       | 80, 0, 0      | #c6c6c6       | terminal brightRed
+lightGreen      | 75, 40, 0     | #fc9bbb       | terminal brightGreen
+lightOrange     | 80, 50, 120   | #acd372       | terminal brightYellow
+lightBlue       | 80, 40, 60    | #f9b887       | terminal brightBlue
+lightPurple     | 80, 35, 240   | #7ed2fe       | terminal brightMagenta, constants
+lightTurquoise  | 80, 34, 300   | #d2bdfe       | terminal brightCyan
+
+### Other
+
+color       | LCH value     | RGB hex value | notes
+---         | ---           | ---           | ---
+black       | 20, 0, 0      | #303030       | terminal black
+brightBlack | 60, 0, 0      | #919191       | terminal brightBlack
+white       | 80, 50, 180   | #24dfc4       | terminal brightCyan
+brightWhite | 100, 0, 0     | #ffffff       | terminal brightWhite
+orange      | 60, 60, 60    | #cf7a33       | warnings
+darkRed     | 20, 20, 30    | #4a2623       | 
+darkOrange  | 20, 20, 60    | #432a17       | 
+darkBlue    | 20, 20, 270   | #1f314e       | 
+dullRed     | 60, 30, 30    | #c17f78       | 
+dullOrange  | 60, 30, 60    | #b48663       | 
+dullGreen   | 60, 25, 150   | #6d9b7a       | 
+dullBlue    | 60, 25, 270   | #7c92bc       | 
+
+### Only for UI
+
+color               | LCH value     | RGB hex value | notes
+---                 | ---           | ---           | ---
+focusBorder         | 40, 40, 300   | #675497       | 
+btnBadgeBg          | 40, 25, 300   | #655882       | 
+btnBadgeHoverBg     | 47, 25, 300   | #776994       | 
+findMatchBg         | 35, 25, 180   | #145d51       | 
+findMatchHlBg       | 25, 20, 60    | #4f3521       | 
+listActiveSelBg     | 25, 20, 300   | #403756       | 
+progressBarBg       | 45, 50, 240   | #0078b3       | 
+border              | 20, 5, 60     | #362f2a       | 
+checkboxBorder      | 40, 5, 60     | #655d57       | 
