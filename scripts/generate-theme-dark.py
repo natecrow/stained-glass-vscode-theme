@@ -59,24 +59,27 @@ def _generateThemeHexValues(fg, bg, red, green, yellow, blue, magenta, cyan):
         'bg35':     LCHabColor(35, 0, bg, obs, ill),
 
         # Main non-neutral foreground
-        'red':                  LCHabColor(60, 60, red, obs, ill), # errors, invalid, diff delete
-        'green':                LCHabColor(60, 50, green, obs, ill), # strings, CSS tags, markup code, diff insert
-        'yellow':               LCHabColor(60, 55, yellow, obs, ill), # variables, HTML tags, markup heading
-        'blue':                 LCHabColor(60, 50, blue, obs, ill), # storage types, attributes, markup underline, diff change
-        'magenta':              LCHabColor(60, 60, magenta, obs, ill), # keywords, storage, tags
-        'cyan':                 LCHabColor(60, 35, cyan, obs, ill), # comments, markup quote
-        'lightPink':            LCHabColor(75, 40, red-30, obs, ill),
-        'lightGreen':           LCHabColor(80, 50, green-30, obs, ill),
-        'lightOrange':          LCHabColor(80, 40, yellow-30, obs, ill),
-        'lightBlue':            LCHabColor(80, 35, blue-30, obs, ill),
-        'lightPurple':          LCHabColor(80, 34, magenta-30, obs, ill), # constants
-        'lightTurquoise':       LCHabColor(80, 50, cyan-30, obs, ill),
+        # Also aligns to terminal colors
+        'red':              LCHabColor(60, 60, red, obs, ill), # errors, invalid, diff delete
+        'green':            LCHabColor(60, 50, green, obs, ill), # strings, CSS tags, markup code, diff insert
+        'yellow':           LCHabColor(60, 55, yellow, obs, ill), # variables, HTML tags, markup heading
+        'blue':             LCHabColor(60, 50, blue, obs, ill), # storage types, attributes, markup underline, diff change
+        'magenta':          LCHabColor(60, 60, magenta, obs, ill), # keywords, storage, tags
+        'cyan':             LCHabColor(60, 35, cyan, obs, ill), # comments, markup quote
+        'lightPink':        LCHabColor(75, 40, red-30, obs, ill),
+        'lightGreen':       LCHabColor(80, 50, green-30, obs, ill),
+        'lightOrange':      LCHabColor(80, 40, yellow-30, obs, ill),
+        'lightBlue':        LCHabColor(80, 35, blue-30, obs, ill),
+        'lightPurple':      LCHabColor(80, 34, magenta-30, obs, ill), # constants
+        'lightTurquoise':   LCHabColor(80, 50, cyan-30, obs, ill),
 
-        # Other
+        # Only used for terminal
         'black':        LCHabColor(20, 0, 0, obs, ill),
         'brightBlack':  LCHabColor(60, 0, 0, obs, ill),
         'white':        LCHabColor(80, 0, 0, obs, ill),
         'brightWhite':  LCHabColor(100, 0, 0, obs, ill),
+
+        # Errors, warnings, info, git
         'orange':       LCHabColor(60, 60, yellow-30, obs, ill), # warnings
         'darkRed':      LCHabColor(20, 20, red, obs, ill),
         'darkOrange':   LCHabColor(20, 20, yellow-30, obs, ill),
@@ -86,7 +89,7 @@ def _generateThemeHexValues(fg, bg, red, green, yellow, blue, magenta, cyan):
         'dullGreen':    LCHabColor(60, 25, green, obs, ill),
         'dullBlue':     LCHabColor(60, 25, blue, obs, ill),
 
-        # Only for UI
+        # Misc
         'focusBorder':      LCHabColor(40, 40, magenta-30, obs, ill),
         'btnBadgeBg':       LCHabColor(40, 25, magenta-30, obs, ill),
         'btnBadgeHoverBg':  LCHabColor(47, 25, magenta-30, obs, ill),
@@ -96,6 +99,7 @@ def _generateThemeHexValues(fg, bg, red, green, yellow, blue, magenta, cyan):
         'progressBarBg':    LCHabColor(45, 50, blue-30, obs, ill),
         'border':           LCHabColor(20, fgChroma, fg, obs, ill),
         'checkboxBorder':   LCHabColor(40, fgChroma, fg, obs, ill),
+        'peekViewBg':       LCHabColor(5, 7, cyan-30, obs, ill),
     }
 
     rgb_colors = {}
@@ -249,17 +253,17 @@ def _generateJsonContent(name, colors):
             'notifications.background': colors['bg10'],
             'panel.border': colors['fg60'] + '59',
             'panelTitle.activeForeground': colors['fg90'],
-            'peekView.border': colors['lightGreen'],
-            'peekViewEditor.background': colors['bg10'] + '66',
+            'peekView.border': colors['lightTurquoise'],
+            'peekViewEditor.background': colors['peekViewBg'],
             'peekViewEditor.matchHighlightBackground': colors['findMatchHlBg'],
-            'peekViewEditorGutter.background': colors['bg10'] + '66',
-            'peekViewResult.background': colors['bg10'],
-            'peekViewResult.fileForeground': colors['fg90'],
+            'peekViewEditorGutter.background': colors['peekViewBg'],
+            'peekViewResult.background': colors['peekViewBg'],
             'peekViewResult.matchHighlightBackground': colors['findMatchHlBg'],
-            'peekViewResult.selectionBackground': colors['green'] + '33',
+            'peekViewResult.selectionBackground': colors['listActiveSelBg'],
             'peekViewResult.selectionForeground': colors['fg90'],
-            'peekViewTitle.background': colors['bg10'] + '66',
-            'peekViewTitleDescription.foreground': colors['fg75'] + 'b3',
+            'peekViewResult.fileForeground': colors['fg90'],
+            'peekViewTitle.background': colors['bg10'],
+            'peekViewTitleDescription.foreground': colors['fg75'],
             'peekViewTitleLabel.foreground': colors['fg90'],
             'progressBar.background': colors['progressBarBg'],
             'scrollbar.shadow': colors['bg00'],
