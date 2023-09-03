@@ -33,8 +33,6 @@ fg90                | 90, 5, 60     | #eae1da       | method/function declaratio
 
 ### Main non-neutral foreground
 
-Also aligns to terminal colors
-
 color           | LCH value     | RGB hex value | notes
 ---             | ---           | ---           | ---
 red             | 60, 60, 30    | #e9655f       | terminal red, errors, invalid, diff delete
