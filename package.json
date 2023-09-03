@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "author": "Nate Crow (https://github.com/natecrow)",
     "publisher": "natecrow",
+    "icon": "images/icon.png",
     "license": "GPL-3.0",
     "repository": {
         "type": "git",
@@ -22,12 +23,12 @@
         "theme": "dark"
     },
     "keywords": [
-        "VSCode", "Themes", "Balanced", "Stained Glass"
+        "VSCode", "Themes", "Stained Glass", "Balanced"
     ],
     "contributes": {
         "themes": [
             {
-                "label": "Stained Glass Dark",
+                "label": "Stained Glass",
                 "uiTheme": "vs-dark",
                 "path": "./themes/stained-glass-dark-color-theme.json"
             }
