@@ -1,14 +1,14 @@
 # Stained Glass Theme for VS Code
 
-I designed this theme using LCH color values to get more perceptually uniform hues and contrast.
-
-- CIE standard observer = 2
-- CIE standard illuminant = D50
+A theme designed with LCH color values to get more perceptually uniform hues and contrast.
 
 ## Palette
 
 - Italics are used for comments, library/support entities, storage types, attributes, and markup italic.
 - Bold is used for method/function declarations and markup bold.
+- For LCH values:
+    - CIE standard observer = 2
+    - CIE standard illuminant = D50
 
 ### Background
 
