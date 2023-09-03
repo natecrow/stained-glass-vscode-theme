@@ -38,17 +38,17 @@ Also aligns to terminal colors
 color           | LCH value     | RGB hex value | notes
 ---             | ---           | ---           | ---
 red             | 60, 60, 30    | #e9655f       | terminal red, errors, invalid, diff delete
-green           | 60, 50, 150   | #26a55d       | terminal green, strings, CSS tags, markup code, diff insert
+green           | 60, 50, 150   | #39a462       | terminal green, strings, CSS tags, markup code, diff insert
 yellow          | 60, 55, 90    | #a48f25       | terminal yellow, variables, HTML tags, markup heading
 blue            | 60, 50, 270   | #5793e9       | terminal blue, storage types, attributes, markup underline, diff change
 magenta         | 60, 60, 330   | #d469c7       | terminal magenta, keywords, storage, tags
 cyan            | 60, 35, 210   | #20a0ae       | terminal cyan, comments, markup quote
-lightPink       | 80, 0, 0      | #c6c6c6       | terminal brightRed
-lightGreen      | 75, 40, 0     | #fc9bbb       | terminal brightGreen
-lightOrange     | 80, 50, 120   | #acd372       | terminal brightYellow
-lightBlue       | 80, 40, 60    | #f9b887       | terminal brightBlue
-lightPurple     | 80, 35, 240   | #7ed2fe       | terminal brightMagenta, constants
-lightTurquoise  | 80, 34, 300   | #d2bdfe       | terminal brightCyan
+lightPink       | 80, 0, 0      | #fc9bbb       | terminal brightRed
+lightGreen      | 75, 40, 0     | #acd372       | terminal brightGreen
+lightOrange     | 80, 50, 120   | #f9b887       | terminal brightYellow
+lightBlue       | 80, 40, 60    | #7ed2fe       | terminal brightBlue
+lightPurple     | 80, 35, 240   | #d2bdfe       | terminal brightMagenta, constants
+lightTurquoise  | 80, 34, 300   | #24dfc4       | terminal brightCyan
 
 ### Only used for terminal
 
@@ -56,7 +56,7 @@ color       | LCH value     | RGB hex value | notes
 ---         | ---           | ---           | ---
 black       | 20, 0, 0      | #303030       | terminal black
 brightBlack | 60, 0, 0      | #919191       | terminal brightBlack
-white       | 80, 50, 180   | #24dfc4       | terminal brightCyan
+white       | 80, 50, 180   | #c6c6c6       | terminal white
 brightWhite | 100, 0, 0     | #ffffff       | terminal brightWhite
 
 ### Errors, warnings, info, git
